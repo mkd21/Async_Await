@@ -1,6 +1,6 @@
 function Download(dnld_link)
 {
-    console.log("Dowmload Started...")
+    console.log("Download Started...")
     return new Promise(function exec(resolve , reject){
         setTimeout(function (){
             console.log("Download Completed");
@@ -33,9 +33,9 @@ function upload(file , uploadLink)
         console.log("Started uploading",file,"on",uploadLink);
 
         setTimeout(() => {
-            const stage = "SUCCESS";
+            const state = "SUCCESS";
 
-            resolve(stage);
+            resolve(state);
         }, 4000);
     });
 }
